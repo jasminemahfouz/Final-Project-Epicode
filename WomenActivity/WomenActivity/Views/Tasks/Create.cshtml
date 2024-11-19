@@ -1,0 +1,54 @@
+﻿@model WomenActivity.Models.TaskItem
+
+@{
+    ViewData["Title"] = "Create Task";
+}
+
+<link rel="stylesheet" href="~/css/custom-create-task.css" />
+
+<div class="create-task-container">
+    <header class="create-task-header">
+        <h2><i class="fas fa-tasks"></i> Create Task</h2>
+    </header>
+
+    <form asp-action="Create" method="post" class="create-task-form">
+        <div class="form-group">
+            <label asp-for="Name" class="control-label">Task Name</label>
+            <input asp-for="Name" class="form-control" placeholder="Enter task name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Description" class="control-label">Description</label>
+            <textarea asp-for="Description" class="form-control" placeholder="Describe your task"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Time" class="control-label">Time</label>
+            <input asp-for="Time" class="form-control" type="datetime-local" />
+            <span asp-validation-for="Time" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Color" class="control-label">Color</label>
+            <input asp-for="Color" class="form-control" placeholder="#FF5733" />
+            <span asp-validation-for="Color" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Type" class="control-label">Type</label>
+            <input asp-for="Type" class="form-control" placeholder="e.g., Work, Personal" />
+            <span asp-validation-for="Type" class="text-danger"></span>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Create</button>
+            <a asp-action="Index" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to List</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

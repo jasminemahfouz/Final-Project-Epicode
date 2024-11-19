@@ -1,0 +1,161 @@
+﻿
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.calendar-header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #556cd6;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+    .calendar-header:hover {
+        transform: scale(1.05);
+        color: #3344aa;
+    }
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #e3e6ea;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+/* Remove underlines from day numbers, text, and weekday names */
+.fc-daygrid-day-number, .fc-event-title, .fc-col-header-cell-cushion {
+    border: none;
+    text-decoration: none;
+}
+
+.fc-daygrid-day, .fc-col-header-cell {
+    transition: background-color 0.3s ease;
+}
+
+    /* Hover effect for day cells */
+    .fc-daygrid-day:hover, .fc-col-header-cell:hover {
+        background-color: #eef2f7;
+    }
+
+/* Styling for calendar control buttons (Today, Week, Month, Day, Navigation Arrows) */
+.fc .fc-button {
+    background: transparent;
+    border: 1px solid #556cd6;
+    color: #556cd6;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    /* Hover effect for control buttons */
+    .fc .fc-button:hover {
+        background-color: #556cd6;
+        color: #ffffff;
+        border-color: #3344aa;
+    }
+
+    /* Remove shadows and focus outline from buttons */
+    .fc .fc-button:focus,
+    .fc .fc-button:active {
+        box-shadow: none;
+        outline: none;
+    }
+
+/* Remove borders and lines under numbers/text in the calendar */
+.fc-daygrid-day-number, .fc-event-title {
+    border: none;
+    text-decoration: none;
+}
+
+.fc-daygrid-day {
+    transition: background-color 0.3s ease;
+}
+
+    .fc-daygrid-day:hover {
+        background-color: #eef2f7;
+    }
+
+.btn-add-routine {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #556cd6;
+    border: 1px solid #556cd6;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    .btn-add-routine:hover {
+        color: #ffffff;
+        background-color: #556cd6;
+        border-color: #3344aa;
+    }
+
+.modal-content {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+    color: #556cd6;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-edit-routine, .btn-delete-routine {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #556cd6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    .btn-edit-routine:hover {
+        color: #ffffff;
+        background-color: #ffc107;
+        border-color: #e0a800;
+    }
+
+    .btn-delete-routine:hover {
+        color: #ffffff;
+        background-color: #dc3545;
+        border-color: #c82333;
+    }
+
+@media (max-width: 768px) {
+    #calendar {
+        font-size: 0.8rem; /* Riduce leggermente la dimensione del testo */
+    }
+
+    .fc-header-toolbar {
+        flex-wrap: wrap; /* Dispone gli elementi su più righe */
+        justify-content: center;
+    }
+
+    .fc-toolbar-title {
+        font-size: 1.2rem; /* Titolo più leggibile su schermi piccoli */
+    }
+
+    .fc-list-table {
+        font-size: 0.9rem; /* Adatta la dimensione della lista */
+    }
+}

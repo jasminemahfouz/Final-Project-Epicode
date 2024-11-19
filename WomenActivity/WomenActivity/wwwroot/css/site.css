@@ -1,0 +1,205 @@
+﻿
+/* ------- GENERALE -------- */
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Hide the default cursor */
+body {
+    cursor: none;
+}
+/* Create the custom cursor */
+.custom-cursor {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background-color: #556cd6; /* Customize color */
+    border-radius: 50%;
+    pointer-events: none; /* Prevent interactions */
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease; /* Smooth cursor movement */
+    z-index: 9999; /* Ensure it stays on top */
+}
+
+
+/* ------------ NAVBAR ------------ */
+
+/* Stile base per la navbar */
+#mainNavbar {
+    padding: 0;
+    height: 60px;
+}
+
+/* Allinea gli elementi in modo responsivo */
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-height: 40px; /* Altezza massima per il logo */
+    max-width: 100%; /* Mantiene proporzioni per schermi piccoli */
+    height: auto; /* Permette l'adattamento automatico */
+    width: auto;
+}
+
+/* Profilo - rende l'icona del profilo responsive */
+.profile-icon {
+    max-height: 40px; /* Altezza massima per l'icona */
+    max-width: 100%; /* Mantiene proporzioni per schermi piccoli */
+    height: auto;
+    width: auto;
+    border-radius: 50%; /* Mantiene forma circolare */
+}
+
+/* Responsività per schermi molto piccoli */
+@media (max-width: 576px) {
+    .logo {
+        max-height: 30px; /* Riduce ulteriormente il logo su schermi molto piccoli */
+    }
+
+    .profile-icon {
+        max-height: 30px; /* Riduce ulteriormente l'icona del profilo */
+    }
+}
+
+/* Profilo - allineamento del dropdown */
+.profile-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #3b3b3b;
+    text-decoration: none;
+}
+
+/* Immagine del profilo */
+.profile-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* Responsività per schermi più piccoli */
+@media (max-width: 768px) {
+    .profile-text {
+        display: none; /* Nasconde il testo del profilo su schermi piccoli */
+    }
+
+    .profile-icon {
+        height: 35px; /* Riduce leggermente l'icona del profilo */
+        width: 35px;
+    }
+}
+
+/* ----------------------- LINK PAGES BODY ---------------------*/
+/* Stile per i link di navigazione */
+.animated-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    position: relative; /* Necessario per il posizionamento della linea */
+}
+
+    /* Stile per l'icona nei link */
+    .animated-link i {
+        margin-right: 8px;
+        font-size: 1.4rem;
+        color: #556cd6;
+    }
+
+    /* Linea sotto i link per hover e active */
+    .animated-link::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #6366f1; /* Colore della linea */
+        transition: width 0.4s ease;
+        position: absolute;
+        bottom: -5px; /* Posizionamento della linea */
+        left: 0;
+    }
+
+    .animated-link:hover::after,
+    .animated-link.active::after {
+        width: 100%; /* La linea si espande su tutto il link */
+    }
+
+    /* Stile per ogni lettera (span) con animazione di rotazione */
+    .animated-link span, .animated-link i {
+        display: inline-block;
+        transition: transform 0.5s ease; /* Imposta la transizione per la rotazione */
+    }
+
+    /* Esegue la rotazione delle lettere e delle icone al passaggio del mouse */
+    .animated-link:hover span,
+    .animated-link:hover i {
+        animation: rotateLetters 0.8s ease forwards;
+    }
+
+@keyframes rotateLetters {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Responsività: nasconde il testo e mostra solo le icone su schermi piccoli */
+@media (max-width: 768px) {
+    .animated-link span {
+        display: none; /* Nasconde il testo sui schermi piccoli */
+    }
+
+    .animated-link i {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .animated-link i {
+        display: none; /* Nasconde le icone sui schermi grandi */
+    }
+
+    .animated-link span {
+        display: inline; /* Mostra solo il testo sui schermi grandi */
+    }
+}
+
+
+/* ----------- FOOTER ------------- */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #eef2f7;
+    color: #333;
+    text-align: center;
+    line-height: 60px; /* Centrare il testo verticalmente */
+    z-index: 1;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}

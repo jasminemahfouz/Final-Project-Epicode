@@ -1,0 +1,103 @@
+﻿/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f3f4;
+    color: #3c4043;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Profile Container */
+.profile-container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.profile-header {
+    font-size: 24px;
+    color: #556cd6;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Information */
+.profile-info p {
+    font-size: 16px;
+    margin: 12px 0;
+    color: #3c4043;
+}
+
+.profile-info strong {
+    color: #556cd6;
+}
+
+/* Profile Sections */
+.profile-sections h3 {
+    font-size: 18px;
+    color: #3c4043;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-sections a {
+    display: block;
+    margin-top: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #556cd6;
+    background-color: #f1f3f4;
+    border: 1px solid #dadce0;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    .profile-sections a:hover {
+        background-color: #dfe4f7;
+        color: #3c4043;
+    }
+
+/* Edit Profile Button */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #556cd6;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+    text-align: center;
+}
+
+    .btn-primary i {
+        font-size: 16px;
+    }
+
+    .btn-primary:hover {
+        background-color: #4758b8;
+        color: #ffffff;
+    }

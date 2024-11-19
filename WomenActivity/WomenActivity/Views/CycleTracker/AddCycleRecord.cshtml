@@ -1,0 +1,162 @@
+﻿@model WomenActivity.Models.CycleRecord
+
+@{
+    ViewData["Title"] = "Add Cycle Record";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/custom-cycle.css" />
+
+<div class="cycle-container">
+    <header class="cycle-header">
+        <h2><i class="fas fa-plus-circle"></i> Add Cycle Record</h2>
+    </header>
+
+    <form method="post" action="/api/CycleTracker/AddCycleRecord" class="cycle-form">
+        <div class="form-group">
+            <label for="StartDate" class="form-label">
+                <i class="fas fa-calendar-alt"></i> Start Date
+            </label>
+            <input id="StartDate" name="StartDate" type="date" class="form-control cycle-input" required />
+        </div>
+
+        <div class="form-group">
+            <label for="EndDate" class="form-label">
+                <i class="fas fa-calendar-alt"></i> End Date
+            </label>
+            <input id="EndDate" name="EndDate" type="date" class="form-control cycle-input" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Mood" class="form-label">
+                <i class="fas fa-smile"></i> Mood
+            </label>
+            <input id="Mood" name="Mood" type="text" class="form-control cycle-input" required placeholder="e.g., Happy, Sad, etc." />
+        </div>
+
+        <div class="form-group">
+            <label for="PainLevel" class="form-label">
+                <i class="fas fa-tachometer-alt"></i> Pain Level (1-10)
+            </label>
+            <input id="PainLevel" name="PainLevel" type="number" min="1" max="10" class="form-control cycle-input" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Symptoms" class="form-label">
+                <i class="fas fa-notes-medical"></i> Symptoms
+            </label>
+            <textarea id="Symptoms" name="Symptoms" class="form-control cycle-textarea" required placeholder="Describe symptoms..."></textarea>
+        </div>
+
+        <input type="hidden" name="UserId" value="@User.FindFirst("UserId")?.Value" />
+
+        <div class="button-group">
+            <button type="submit" class="btn btn-primary cycle-button">
+                <i class="fas fa-save"></i> Add Record
+            </button>
+            <a class="btn btn-secondary cycle-button" href="@Url.Action("Index", "CycleTracker", new { userId = @User.FindFirst("UserId")?.Value })">
+                <i class="fas fa-times-circle"></i> Back
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
+<style>
+    .cycle-container {
+        max-width: 500px;
+        margin: 50px auto;
+        background-color: #ffffff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .cycle-header {
+        text-align: center;
+        font-size: 24px;
+        color: #202124;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        font-size: 14px;
+        color: #5f6368;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .cycle-input,
+    .cycle-textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #dadce0;
+        border-radius: 8px;
+        background-color: #f1f3f4;
+        font-size: 16px;
+        color: #202124;
+        transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+        .cycle-input:focus,
+        .cycle-textarea:focus {
+            border-color: #1a73e8;
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.3);
+            outline: none;
+        }
+
+        .cycle-input::placeholder,
+        .cycle-textarea::placeholder {
+            color: #9aa0a6;
+        }
+
+    .button-group {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 8px;
+        padding: 10px 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-primary {
+        background-color: #1a73e8;
+        color: #ffffff;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #1558b0;
+        }
+
+    .btn-secondary {
+        background-color: #e8eaed;
+        color: #3c4043;
+        border: none;
+    }
+
+        .btn-secondary:hover {
+            background-color: #d3d6da;
+        }
+
+</style>

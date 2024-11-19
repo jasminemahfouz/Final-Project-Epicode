@@ -1,0 +1,185 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WomenActivity
+build_property.RootNamespace = WomenActivity
+build_property.ProjectDir = /Users/adapter88/Projects/WomenActivity/WomenActivity/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/adapter88/Projects/WomenActivity/WomenActivity
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/CycleTracker/AddCycleRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3ljbGVUcmFja2VyL0FkZEN5Y2xlUmVjb3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/CycleTracker/EditCycleRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3ljbGVUcmFja2VyL0VkaXRDeWNsZVJlY29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/CycleTracker/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3ljbGVUcmFja2VyL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/DailyWellness/AddWellnessRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFpbHlXZWxsbmVzcy9BZGRXZWxsbmVzc1JlY29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/DailyWellness/EditWellnessRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFpbHlXZWxsbmVzcy9FZGl0V2VsbG5lc3NSZWNvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/DailyWellness/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFpbHlXZWxsbmVzcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Home/AboutMe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dE1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/MainPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFpblBhZ2UvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/MainPage/MainPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFpblBhZ2UvTWFpblBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/MainPage/ShowCalendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFpblBhZ2UvU2hvd0NhbGVuZGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Routine/AddRoutine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm91dGluZS9BZGRSb3V0aW5lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Routine/DeleteRoutine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm91dGluZS9EZWxldGVSb3V0aW5lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Routine/EditRoutine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm91dGluZS9FZGl0Um91dGluZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Routine/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm91dGluZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Tasks/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFza3MvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Tasks/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFza3MvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Tasks/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFza3MvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Tasks/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFza3MvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Tasks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFza3MvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/AddBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvQWRkQm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/AddGoal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvQWRkR29hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/AddMemory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvQWRkTWVtb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/Books.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvQm9va3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/DeleteBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvRGVsZXRlQm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/DeleteGoal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvRGVsZXRlR29hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/DeleteMemory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvRGVsZXRlTWVtb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/EditBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvRWRpdEJvb2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/EditGoal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvRWRpdEdvYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/EditMemory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvRWRpdE1lbW9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/Goals.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvR29hbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/UserProfile/Memories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvTWVtb3JpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Users/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Users/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adapter88/Projects/WomenActivity/WomenActivity/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4ke6am77pu

@@ -1,0 +1,160 @@
+﻿@model WomenActivity.Models.DailyWellnessRecord
+
+@{
+    ViewData["Title"] = "Edit Wellness Record";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/custom-wellness.css" />
+
+<div class="wellness-container">
+    <header class="wellness-header">
+        <h2><i class="fas fa-edit"></i> Edit Wellness Record</h2>
+    </header>
+
+    <form asp-action="EditWellnessRecord" method="post" class="wellness-form">
+        <div class="form-group">
+            <label asp-for="Date" class="form-label">
+                <i class="fas fa-calendar-alt"></i> Date
+            </label>
+            <input asp-for="Date" type="date" class="form-control wellness-input" value="@Model.Date.ToString("yyyy-MM-dd")" required />
+            <span asp-validation-for="Date" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Mood" class="form-label">
+                <i class="fas fa-smile"></i> Mood
+            </label>
+            <input asp-for="Mood" class="form-control wellness-input" value="@Model.Mood" required placeholder="e.g., Happy, Sad, etc." />
+            <span asp-validation-for="Mood" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="EnergyLevel" class="form-label">
+                <i class="fas fa-bolt"></i> Energy Level
+            </label>
+            <input asp-for="EnergyLevel" type="number" min="1" max="10" class="form-control wellness-input" value="@Model.EnergyLevel" required placeholder="1-10" />
+            <span asp-validation-for="EnergyLevel" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Notes" class="form-label">
+                <i class="fas fa-sticky-note"></i> Notes
+            </label>
+            <textarea asp-for="Notes" class="form-control wellness-textarea" required placeholder="Add any notes here...">@Model.Notes</textarea>
+            <span asp-validation-for="Notes" class="text-danger"></span>
+        </div>
+
+        <input type="hidden" asp-for="UserId" value="@User.FindFirst("UserId")?.Value" />
+        <input type="hidden" asp-for="Id" />
+
+        <div class="button-group">
+            <button type="submit" class="btn btn-primary wellness-button">
+                <i class="fas fa-save"></i> Save
+            </button>
+            <a class="btn btn-secondary wellness-button" href="@Url.Action("Index", "DailyWellness", new { userId = @User.FindFirst("UserId")?.Value })">
+                <i class="fas fa-times-circle"></i> Cancel
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<style>
+    .wellness-container {
+        max-width: 500px;
+        margin: 50px auto;
+        background-color: #ffffff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .wellness-header {
+        text-align: center;
+        font-size: 24px;
+        color: #202124;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        font-size: 14px;
+        color: #5f6368;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .wellness-input,
+    .wellness-textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #dadce0;
+        border-radius: 8px;
+        background-color: #f1f3f4;
+        font-size: 16px;
+        color: #202124;
+        transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+        .wellness-input:focus,
+        .wellness-textarea:focus {
+            border-color: #1a73e8;
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.3);
+            outline: none;
+        }
+
+        .wellness-input::placeholder,
+        .wellness-textarea::placeholder {
+            color: #9aa0a6;
+        }
+
+    .button-group {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 8px;
+        padding: 10px 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-primary {
+        background-color: #1a73e8;
+        color: #ffffff;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #1558b0;
+        }
+
+    .btn-secondary {
+        background-color: #e8eaed;
+        color: #3c4043;
+        border: none;
+    }
+
+        .btn-secondary:hover {
+            background-color: #d3d6da;
+        }
+
+</style>

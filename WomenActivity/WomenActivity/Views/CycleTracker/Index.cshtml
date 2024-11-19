@@ -1,0 +1,232 @@
+﻿@model IEnumerable<WomenActivity.Models.CycleRecord>
+@{
+    ViewData["Title"] = "Cycle Tracker";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var prediction = ViewBag.Prediction as WomenActivity.Models.CyclePrediction;
+}
+@using System.Globalization
+@{
+    var cultureInfo = new CultureInfo("en-US");
+}
+
+<link rel="stylesheet" href="~/css/custom-cycle.css" asp-append-version="true" />
+
+<!-- Main Container -->
+<div class="cycle-container">
+    <h2 class="cycle-header animate__animated animate__fadeInDown">Cycle Tracker</h2>
+
+    @if (prediction != null)
+    {
+        <div class="cycle-prediction-card animate__animated animate__fadeIn">
+            <strong>Next Predicted Cycle:</strong><br />
+            <span class="prediction-date">Start Date: @prediction.PredictedStartDate.ToString("dddd, MMMM d, yyyy", cultureInfo)</span><br />
+            <span class="prediction-date">End Date: @prediction.PredictedEndDate.ToString("dddd, MMMM d, yyyy", cultureInfo)</span>
+        </div>
+    }
+
+<div class="filter-container text-center mb-4">
+    <form method="get" action="@Url.Action("Index", "CycleTracker")">
+        <input type="hidden" name="userId" value="@User.FindFirst("UserId")?.Value" />
+        <label for="monthFilter" class="form-label"><strong>Filter by Month:</strong></label>
+        <select id="monthFilter" name="monthFilter" class="form-select d-inline-block w-auto">
+            <option value="">Select Month</option>
+            @foreach (var month in ViewBag.AvailableMonths as List<string>)
+            {
+                if (month == ViewBag.CurrentMonthFilter)
+                {
+                    <option value="@month" selected="selected">
+                        @DateTime.ParseExact(month, "yyyy-MM", CultureInfo.InvariantCulture).ToString("MMMM yyyy", CultureInfo.InvariantCulture)
+                    </option>
+                }
+                else
+                {
+                    <option value="@month">
+                        @DateTime.ParseExact(month, "yyyy-MM", CultureInfo.InvariantCulture).ToString("MMMM yyyy", CultureInfo.InvariantCulture)
+                    </option>
+                }
+            }
+        </select>
+        <button type="submit" class="btn btn-primary ms-2">Apply</button>
+    </form>
+</div>
+
+
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            @foreach (var record in Model)
+            {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="cycle-card">
+                        <div class="cycle-card-header">
+                            <div class="card-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>
+                                    @record.StartDate.ToString("dddd, MMMM d, yyyy") -
+                                    @record.EndDate.ToString("dddd, MMMM d, yyyy")
+                                </span>
+                            </div>
+                            <div class="card-actions">
+                                <a class="btn btn-edit" href="@Url.Action("EditCycleRecord", "CycleTracker", new { id = record.Id, userId = @User.FindFirst("UserId")?.Value })">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a>
+                                <form asp-action="DeleteCycleRecord" asp-controller="CycleTracker" asp-route-id="@record.Id" method="post">
+                                    <input type="hidden" name="UserId" value="@User.FindFirst("UserId")?.Value" />
+                                    <button type="submit" class="btn btn-delete"><i class="fas fa-trash-alt"></i></button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="cycle-card-content">
+                            <div class="card-item">
+                                <i class="fas fa-smile"></i>
+                                <span><strong>Mood:</strong> @record.Mood</span>
+                            </div>
+                            <div class="card-item">
+                                <i class="fas fa-heartbeat"></i>
+                                <span><strong>Pain Level:</strong> @record.PainLevel</span>
+                            </div>
+                            <div class="card-item">
+                                <i class="fas fa-notes-medical"></i>
+                                <span><strong>Symptoms:</strong> @record.Symptoms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="btn-add-container">
+        <a class="btn btn-add-new animate__animated animate__fadeInUp" href="@Url.Action("AddCycleRecord", "CycleTracker", new { userId = @User.FindFirst("UserId")?.Value })" title="Add New Cycle Record">
+            <i class="fas fa-plus"></i>
+        </a>
+    </div>
+
+    <canvas id="cycleChart" class="cycle-chart animate__animated animate__fadeIn mb-3" width="600" height="300"></canvas>
+    <canvas id="cycleDurationChart" class="cycle-chart animate__animated animate__fadeIn mb-4" width="600" height="300"></canvas>
+
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+    const ctx = document.getElementById('cycleChart').getContext('2d');
+    const durationCtx = document.getElementById('cycleDurationChart').getContext('2d');
+
+    // Prepara i dati per il primo grafico (Pain Level)
+    const cycleData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(r => new { StartDate = r.StartDate, PainLevel = r.PainLevel, EndDate = r.EndDate })));
+
+    const labels = cycleData.map(data => new Date(data.StartDate).toLocaleDateString());
+    const painLevels = cycleData.map(data => data.PainLevel);
+
+    // Calcola la durata del ciclo in giorni
+    const durations = cycleData.map(data => {
+        const start = new Date(data.StartDate);
+        const end = new Date(data.EndDate);
+        return Math.ceil((end - start) / (1000 * 60 * 60 * 24)); // Calcolo in giorni
+    });
+
+    // Primo grafico: Pain Level
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Pain Level Over Time',
+                data: painLevels,
+                borderColor: '#556cd6',
+                backgroundColor: 'rgba(85, 108, 214, 0.2)',
+                fill: true,
+                tension: 0.4
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: true,
+                    labels: {
+                        color: '#444'
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Date',
+                        color: '#444'
+                    },
+                    grid: {
+                        color: 'rgba(0, 0, 0, 0.1)'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Pain Level',
+                        color: '#444'
+                    },
+                    beginAtZero: true,
+                    max: 10,
+                    grid: {
+                        color: 'rgba(0, 0, 0, 0.1)'
+                    }
+                }
+            }
+        }
+    });
+
+    // Secondo grafico: Durata del ciclo
+    new Chart(durationCtx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Cycle Duration (days)',
+                data: durations,
+                backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: true,
+                    labels: {
+                        color: '#444'
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Start Date',
+                        color: '#444'
+                    },
+                    grid: {
+                        color: 'rgba(0, 0, 0, 0.1)'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Cycle Duration (days)',
+                        color: '#444'
+                    },
+                    beginAtZero: true,
+                    grid: {
+                        color: 'rgba(0, 0, 0, 0.1)'
+                    }
+                }
+            }
+        }
+    });
+});
+    </script>
+}

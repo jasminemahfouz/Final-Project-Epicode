@@ -1,0 +1,110 @@
+﻿/* Container principale */
+.create-task-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.create-task-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #202124;
+    font-weight: 600;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.control-label {
+    font-size: 14px;
+    color: #5f6368;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    background-color: #f1f3f4;
+    font-size: 16px;
+    color: #202124;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+    .form-control:focus {
+        border-color: #1a73e8;
+        box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.3);
+        outline: none;
+    }
+
+    /* Placeholder styling */
+    .form-control::placeholder {
+        color: #9aa0a6;
+    }
+
+/* Buttons */
+.btn {
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: #1558b0;
+    }
+
+.btn-secondary {
+    background-color: #e8eaed;
+    color: #3c4043;
+    border: none;
+}
+
+    .btn-secondary:hover {
+        background-color: #d3d6da;
+    }
+
+/* Form actions (submit and back buttons) */
+.form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Icons within buttons */
+.btn i {
+    font-size: 16px;
+}
+
+/* Validation error messages */
+.text-danger {
+    font-size: 13px;
+    color: #d93025;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 2px;
+}

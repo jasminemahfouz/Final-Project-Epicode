@@ -1,0 +1,231 @@
+﻿/* Container generale */
+.cycle-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titolo */
+.cycle-header {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Predizione ciclo */
+.cycle-prediction-card {
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+    .cycle-prediction-card strong {
+        font-size: 1.2rem;
+        color: #2e7d32;
+    }
+
+.prediction-date {
+    font-size: 1rem;
+    color: #2e7d32;
+}
+
+/* Card container */
+.cycle-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+}
+
+/* Card */
+.cycle-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .cycle-card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+/* Header della card */
+.cycle-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 8px;
+    gap: 12px;
+}
+
+.card-date {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.2;
+    max-width: 70%;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+}
+
+    .card-actions .btn {
+        background-color: #f5f5f5;
+        border: none;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.2s;
+        cursor: pointer;
+    }
+
+        .card-actions .btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        .card-actions .btn i {
+            color: #555;
+            font-size: 1.2rem;
+        }
+
+/* Contenuto della card */
+.cycle-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.card-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #555;
+    gap: 8px;
+}
+
+    .card-item i {
+        color: #556cd6;
+        font-size: 1.2rem;
+    }
+
+    .card-item span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+/* Pulsante per aggiungere un nuovo record */
+.btn-add-new {
+    display: inline-block;
+    background-color: #556cd6;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.2s;
+    margin: 20px auto;
+}
+
+    .btn-add-new:hover {
+        background-color: #4051b5;
+        transform: scale(1.05);
+    }
+
+    .btn-add-new i {
+        margin-right: 8px;
+    }
+
+/* Grafici */
+.cycle-chart {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    .cycle-card {
+        padding: 12px;
+    }
+
+    .card-date {
+        font-size: 0.9rem;
+    }
+
+    .card-item {
+        font-size: 0.9rem;
+    }
+
+    .btn-add-new {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Pulsante "Add New Record" con solo icona */
+/* Contenitore per il pulsante */
+.btn-add-container {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Spazio sopra e sotto il pulsante */
+}
+
+/* Pulsante "Add New Record" con solo icona */
+.btn-add-new {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #556cd6;
+    color: #fff;
+    width: 60px; /* Aumenta un po' la dimensione per un effetto migliore */
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.5rem; /* Icona più grande */
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+    .btn-add-new:hover {
+        background-color: #4051b5;
+        transform: scale(1.1);
+    }
+
+    .btn-add-new i {
+        margin: 0;
+        color: #fff;
+    }

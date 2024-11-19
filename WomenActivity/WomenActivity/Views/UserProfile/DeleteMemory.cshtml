@@ -1,0 +1,27 @@
+﻿@model WomenActivity.Models.Memory
+
+@{
+    ViewData["Title"] = "Delete Memory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/profile-sections.css" />
+<h2 class="text-center text-danger mb-4">Delete Memory</h2>
+
+<p>Are you sure you want to delete this memory?</p>
+<div class="mb-4">
+    <h4>@Model.Title</h4>
+    <p>@Model.Description</p>
+    <p>@Model.Date.ToShortDateString()</p>
+    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+    {
+        <img src="@Model.ImageUrl" alt="Memory Image" class="img-fluid" />
+    }
+</div>
+
+<form asp-action="DeleteMemory" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="d-flex justify-content-between">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Memories" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>

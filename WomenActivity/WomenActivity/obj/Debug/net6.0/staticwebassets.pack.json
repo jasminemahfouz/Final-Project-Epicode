@@ -1,0 +1,353 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/obj/Debug/net6.0/scopedcss/projectbundle/WomenActivity.bundle.scp.css",
+      "PackagePath": "staticwebassets/WomenActivity.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/auth.css",
+      "PackagePath": "staticwebassets/css/auth.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/custom-books.css",
+      "PackagePath": "staticwebassets/css/custom-books.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/custom-create-task.css",
+      "PackagePath": "staticwebassets/css/custom-create-task.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/custom-cycle.css",
+      "PackagePath": "staticwebassets/css/custom-cycle.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/custom-goals.css",
+      "PackagePath": "staticwebassets/css/custom-goals.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/custom-main.css",
+      "PackagePath": "staticwebassets/css/custom-main.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/custom-memories.css",
+      "PackagePath": "staticwebassets/css/custom-memories.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/custom-mobile-app.css",
+      "PackagePath": "staticwebassets/css/custom-mobile-app.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/custom-profile.css",
+      "PackagePath": "staticwebassets/css/custom-profile.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/custom-routine.css",
+      "PackagePath": "staticwebassets/css/custom-routine.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/custom-tasks.css",
+      "PackagePath": "staticwebassets/css/custom-tasks.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/custom-wellness.css",
+      "PackagePath": "staticwebassets/css/custom-wellness.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/edittask.css",
+      "PackagePath": "staticwebassets/css/edittask.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/home.css",
+      "PackagePath": "staticwebassets/css/home.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/profle-sections.css",
+      "PackagePath": "staticwebassets/css/profle-sections.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/images/profiles/photo1.jpg",
+      "PackagePath": "staticwebassets/images/profiles/photo1.jpg"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/images/profiles/photo2.jpg",
+      "PackagePath": "staticwebassets/images/profiles/photo2.jpg"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/images/profiles/photo3.jpg",
+      "PackagePath": "staticwebassets/images/profiles/photo3.jpg"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/images/profiles/photo4.jpg",
+      "PackagePath": "staticwebassets/images/profiles/photo4.jpg"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/images/profiles/photo5.jpg",
+      "PackagePath": "staticwebassets/images/profiles/photo5.jpg"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/images/profiles/photo6.jpg",
+      "PackagePath": "staticwebassets/images/profiles/photo6.jpg"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/adapter88/Projects/WomenActivity/WomenActivity/wwwroot/logo/logo-no-background.png",
+      "PackagePath": "staticwebassets/logo/logo-no-background.png"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.WomenActivity.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.WomenActivity.props",
+      "PackagePath": "build\\WomenActivity.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.WomenActivity.props",
+      "PackagePath": "buildMultiTargeting\\WomenActivity.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.WomenActivity.props",
+      "PackagePath": "buildTransitive\\WomenActivity.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

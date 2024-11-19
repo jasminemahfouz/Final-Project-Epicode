@@ -1,0 +1,9 @@
+﻿// Views/MainPage/ShowCalendar.cshtml
+@model WomenActivity.Models.HomePageViewModel
+
+<h2>Calendar</h2>
+
+<p>@Model.Calendar.CurrentYear - @Model.Calendar.CurrentMonth</p>
+<p>Days in month: @Model.Calendar.DaysInMonth</p>
+
+<a href="/MainPage" class="btn btn-primary">Back to Main Page</a>

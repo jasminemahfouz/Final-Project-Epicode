@@ -1,0 +1,146 @@
+﻿@model WomenActivity.Models.Goal
+
+@{
+    ViewData["Title"] = "Edit Goal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/profile-sections.css" />
+
+<h2 class="goal-header text-center"><i class="fas fa-bullseye"></i> Edit Goal</h2>
+
+<form asp-action="EditGoal" method="post" class="goal-form mx-auto">
+    <div asp-validation-summary="ModelOnly" class="validation-summary text-danger"></div>
+
+    <!-- Hidden field for Goal ID -->
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Title" class="form-label"><i class="fas fa-flag"></i> Title</label>
+        <input asp-for="Title" class="form-input" />
+        <span asp-validation-for="Title" class="validation-message"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="form-label"><i class="fas fa-align-left"></i> Description</label>
+        <textarea asp-for="Description" class="form-textarea"></textarea>
+        <span asp-validation-for="Description" class="validation-message"></span>
+    </div>
+
+    <div class="button-group">
+        <button type="submit" class="btn-submit"><i class="fas fa-save"></i> Save</button>
+        <a asp-action="Goals" class="btn-cancel"><i class="fas fa-times"></i> Cancel</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
+<style>
+
+    /* Container styling */
+    .goal-header {
+        font-size: 24px;
+        color: #3c4043;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .goal-header i {
+            margin-right: 10px;
+            color: #556cd6;
+        }
+
+    /* Form styling */
+    .goal-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-label {
+        font-size: 14px;
+        color: #5f6368;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .form-label i {
+            margin-right: 8px;
+            color: #556cd6;
+        }
+
+    .form-input, .form-textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #dadce0;
+        background-color: #f1f3f4;
+        transition: border-color 0.3s;
+    }
+
+        .form-input:focus, .form-textarea:focus {
+            border-color: #556cd6;
+            outline: none;
+        }
+
+    /* Button styling */
+    .button-group {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .btn-submit, .btn-cancel {
+        padding: 10px 20px;
+        font-weight: 500;
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-submit {
+        background-color: #556cd6;
+        color: white;
+    }
+
+    .btn-cancel {
+        background-color: #ea4335;
+        color: white;
+    }
+
+    .btn-submit:hover {
+        background-color: #4054b2;
+    }
+
+    .btn-cancel:hover {
+        background-color: #d73a31;
+    }
+
+    .btn-submit i, .btn-cancel i {
+        margin-right: 8px;
+    }
+
+</style>

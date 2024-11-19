@@ -1,0 +1,234 @@
+﻿
+
+
+/* General Layout for Mobile */
+body {
+    font-family: 'VT323', monospace;
+    background: #f4f1ee; /* Soft nude background */
+    color: #5a5a5a;
+    padding: 0 15px;
+}
+
+.day-link {
+    text-decoration: none; /* Rimuove la linea sotto ai numeri del calendario */
+}
+
+
+/* Main Container */
+.mainpage-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header Styling */
+.mainpage-header {
+    background: #d9cfc0; /* Pastel beige */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #b8a89e; /* Darker shade for contrast */
+}
+
+.current-date {
+    font-size: 1.2em;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+    .current-date:hover {
+        color: #ffbe76; /* Soft peach */
+    }
+
+/* Calendar Controls */
+.calendar-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #b8a89e; /* Soft brown */
+    color: white;
+}
+
+.btn-navigation {
+    background: transparent;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+    .btn-navigation:hover {
+        transform: scale(1.2);
+    }
+
+.calendar-title {
+    font-weight: bold;
+}
+
+/* Calendar Table */
+.calendar-container {
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.calendar-header {
+    font-size: 1.5em;
+    color: #b8a89e;
+    margin-bottom: 15px;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .calendar-table th,
+    .calendar-table td {
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        transition: background 0.3s, transform 0.3s;
+    }
+
+.calendar-day {
+    cursor: pointer;
+}
+
+    .calendar-day:hover {
+        background: #ffddd2; /* Soft pastel pink */
+        color: white;
+        transform: scale(1.1);
+    }
+
+.empty-day {
+    background: #f4f1ee;
+}
+
+/* Task Form & Button */
+.btn-add-task {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 20px auto;
+    padding: 15px;
+    background: #a3d3b5; /* Soft green */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.3em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+    .btn-add-task:hover {
+        background: #82c596; /* Slightly darker green */
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+.task-form-container {
+    background: #ffffff;
+    padding: 20px;
+    border-top: 5px solid #d9cfc0; /* Matches header */
+    animation: slideIn 0.5s ease-out;
+}
+
+.task-form .task-input,
+.task-form .task-textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.task-input:focus,
+.task-textarea:focus {
+    border-color: #d9cfc0;
+    box-shadow: 0 0 10px rgba(217, 207, 192, 0.2);
+}
+
+.task-button {
+    background: #ffbe76; /* Soft peach */
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+    .task-button:hover {
+        background: #e89b58; /* Darker peach */
+        transform: translateY(-5px);
+    }
+
+/* Task List */
+.tasks-for-day-container {
+    padding: 15px;
+    border-top: 5px solid #d9cfc0;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tasks-for-day {
+    text-align: center;
+    color: #b8a89e;
+    margin-bottom: 20px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 8px solid #ffbe76; /* Peach color */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .task-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+.no-tasks-message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #d9534f; /* Muted red */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

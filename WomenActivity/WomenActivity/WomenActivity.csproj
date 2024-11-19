@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\" />
+    <None Remove="Views\Users\" />
+    <None Remove="Views\MainPage\" />
+    <None Remove="Views\Tasks\" />
+    <None Remove="Views\CycleTracker\" />
+    <None Remove="Views\DailyWellness\" />
+    <None Remove="Views\UserProfile\" />
+    <None Remove="Views\Routine\" />
+    <None Remove="Filters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Views\Users\" />
+    <Folder Include="Views\MainPage\" />
+    <Folder Include="Views\Tasks\" />
+    <Folder Include="Views\CycleTracker\" />
+    <Folder Include="Views\DailyWellness\" />
+    <Folder Include="Views\UserProfile\" />
+    <Folder Include="Views\Routine\" />
+    <Folder Include="wwwroot\logo\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\images\profiles\" />
+    <Folder Include="Filters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.35" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.35" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.35">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="6.0.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\logo\" />
+    <Content Remove="wwwroot\images\" />
+    <Content Remove="wwwroot\images\profiles\" />
+  </ItemGroup>
+</Project>

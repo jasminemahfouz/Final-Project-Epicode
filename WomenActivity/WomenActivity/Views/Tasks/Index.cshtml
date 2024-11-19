@@ -1,0 +1,84 @@
+﻿@model IEnumerable<WomenActivity.Models.TaskItem>
+
+@{
+    ViewData["Title"] = "Your Tasks";
+}
+<link rel="stylesheet" href="~/css/custom-tasks.css" />
+
+<div class="tasks-container">
+    <!-- Header -->
+    <header class="tasks-header">
+        <h2><i class="fas fa-tasks"></i> Your Tasks</h2>
+    </header>
+
+    <!-- Add New Task Button -->
+    <section class="add-task-section mb-4">
+        <a href="@Url.Action("Create", "Tasks")" class="btn-add-task">
+            <i class="fas fa-plus-circle"></i>
+        </a>
+    </section>
+    <!-- Filters -->
+    <section class="filter-section">
+        <form asp-action="Index" method="get" class="filter-form">
+            <div class="filter-group">
+                <label for="color"><i class="fas fa-palette"></i></label>
+                <select id="color" name="color" class="form-control">
+                    <option value="">All Colors</option>
+                    @foreach (var color in ViewBag.Colors as List<string>)
+                    {
+                        <option value="@color">@color</option>
+                    }
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="type"><i class="fas fa-tags"></i></label>
+                <select id="type" name="type" class="form-control">
+                    <option value="">All Types</option>
+                    @foreach (var type in ViewBag.Types as List<string>)
+                    {
+                        <option value="@type">@type</option>
+                    }
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="time"><i class="fas fa-calendar-alt"></i></label>
+                <input type="date" id="time" name="time" class="form-control" />
+            </div>
+            <button type="submit" class="btn filter-btn"><i class="fas fa-filter"></i></button>
+        </form>
+    </section>
+
+    <!-- Task Cards -->
+    <section class="tasks-section">
+        @if (!Model.Any())
+        {
+            <p class="no-tasks-message">You currently have no tasks.</p>
+        }
+        else
+        {
+            <div class="tasks-grid">
+                @foreach (var task in Model)
+                {
+                    <div class="task-card">
+                        <div class="task-header" style="background-color:@task.Color;"></div>
+                        <div class="task-body">
+                            <h3 class="task-title">@task.Name</h3>
+                            <p class="task-desc">@task.Description</p>
+                            <p class="task-time"><i class="fas fa-clock"></i> @task.Time.ToString("g")</p>
+                        </div>
+                        <div class="task-actions">
+                            <a href="@Url.Action("Edit", "Tasks", new { id = task.Id })" class="btn-task">
+                                <i class="fas fa-pencil-alt"></i>
+                            </a>
+                            <a href="@Url.Action("Delete", "Tasks", new { id = task.Id })" class="btn-task delete">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </section>
+
+
+</div>

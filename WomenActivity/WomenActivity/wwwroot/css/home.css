@@ -1,0 +1,50 @@
+﻿/* Welcome Section */
+.welcome-banner {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+    .welcome-banner h1 {
+        color: #333333;
+    }
+
+    .welcome-banner p {
+        color: #555555;
+    }
+
+/* Features Section */
+.feature-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature-card i {
+        color: #556cd6;
+    }
+
+    .feature-card h3 {
+        color: #333333;
+        font-weight: 600;
+    }
+
+    .feature-card p {
+        color: #555555;
+        font-size: 0.9rem;
+    }
+
+/* Simplicity Section */
+.bg-light {
+    background-color: #f8f9fa !important;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

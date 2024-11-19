@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "About Me!";
+}
+
+<div class="container my-5">
+    <div class="text-center">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+        <p class="lead text-muted" id="subtitle">Un progetto per migliorare la produttività quotidiana con semplicità.</p>
+        <button id="toggleLanguage" class="btn btn-primary mt-3">Switch to English</button>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <!-- Contenuto in Italiano -->
+                    <div id="content-italian">
+                        <h2 class="h4 text-primary mb-3">
+                            Benvenuti su <strong>WomenActivity</strong>
+                        </h2>
+                        <p>
+                            <strong>WomenActivity</strong> è un sito semplice e intuitivo creato per aiutare tutte le donne a
+                            tracciare le proprie task e routine quotidiane. L''obiettivo è offrire uno strumento senza
+                            distrazioni, facile da usare e adatto a tutte le età, per semplificare la gestione della giornata e
+                            migliorare la produttività. Con un design essenziale e funzionale, <strong>WomenActivity</strong> è
+                            pensato per chi vuole organizzarsi senza perdere tempo con complesse configurazioni o interfacce
+                            troppo articolate.
+                        </p>
+                        <h3 class="h5 text-secondary mt-4">Chi sono</h3>
+                        <p>
+                            Mi chiamo <strong>Yasmin</strong>, sono una developer e sono entusiasta di entrare nel mondo della
+                            programmazione. Questo progetto rappresenta una delle mie prime esperienze da sviluppatrice junior,
+                            e sono felice di condividere con voi il mio lavoro. Ogni giorno è una nuova opportunità di imparare,
+                            proprio come lo è stato per me durante
+                            il suo sviluppo.
+                        </p>
+                        <p class="text-muted text-end">
+                            <em>Grazie per essere qui!</em>
+                        </p>
+                    </div>
+
+                    <!-- Contenuto in Inglese -->
+                    <div id="content-english" style="display: none;">
+                        <h2 class="h4 text-primary mb-3">
+                            Welcome to <strong>WomenActivity</strong>
+                        </h2>
+                        <p>
+                            <strong>WomenActivity</strong> is a simple and intuitive site created to help all women track their
+                            tasks and daily routines. The goal is to offer a distraction-free tool, easy to use, and suitable for
+                            all ages, to simplify day-to-day management and improve productivity. With an essential and functional
+                            design, <strong>WomenActivity</strong> is for those who want to get organized without wasting time on
+                            complex configurations or overly elaborate interfaces.
+                        </p>
+                        <h3 class="h5 text-secondary mt-4">About Me</h3>
+                        <p>
+                            My name is <strong>Yasmin</strong>, I am a developer, and I am excited to dive into the world of
+                            programming. This project represents one of my first experiences as a junior developer, and I am happy
+                            to share my work with you. Every day is a new opportunity to learn, just as it was for me during its development.
+                        </p>
+                        <p class="text-muted text-end">
+                            <em>Thank you for being here!</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Script per alternare tra italiano e inglese
+    const toggleButton = document.getElementById("toggleLanguage");
+    const contentItalian = document.getElementById("content-italian");
+    const contentEnglish = document.getElementById("content-english");
+    const subtitle = document.getElementById("subtitle");
+
+    toggleButton.addEventListener("click", () => {
+        if (contentItalian.style.display === "none") {
+            // Mostra italiano
+            contentItalian.style.display = "block";
+            contentEnglish.style.display = "none";
+            subtitle.textContent = "Un progetto per migliorare la produttività quotidiana con semplicità.";
+            toggleButton.textContent = "Switch to English";
+        } else {
+            // Mostra inglese
+            contentItalian.style.display = "none";
+            contentEnglish.style.display = "block";
+            subtitle.textContent = "A project to improve daily productivity with simplicity.";
+            toggleButton.textContent = "Passa a Italiano";
+        }
+    });
+</script>

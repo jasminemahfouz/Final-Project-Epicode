@@ -1,0 +1,32 @@
+﻿// Views/MainPage/MainPage.cshtml
+@model WomenActivity.Models.HomePageViewModel
+
+<h2>Main Page</h2>
+
+<p>Today's Date: @Model.CurrentDate.ToString("D")</p>
+
+<h3>Today's Tasks</h3>
+@if (Model.TaskItems != null && Model.TaskItems.Any())
+{
+    <ul>
+        @foreach (var task in Model.TaskItems)
+        {
+            <li>
+                <strong>@task.Name</strong>: @task.Description (@task.Type) - @task.Time.ToString("t")
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No tasks for today.</p>
+}
+
+<a href="/TaskItems/Create" class="btn btn-primary">Add New Task</a>
+
+@if (Model.ShowCalendar)
+{
+    <h3>Calendar</h3>
+    <p>@Model.Calendar.CurrentYear - @Model.Calendar.CurrentMonth</p>
+    <p>Days in month: @Model.Calendar.DaysInMonth</p>
+}

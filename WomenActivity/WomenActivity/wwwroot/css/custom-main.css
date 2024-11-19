@@ -1,0 +1,249 @@
+﻿/* Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Sfondo chiaro */
+    color: #333; /* Testo primario */
+    margin: 0;
+    padding: 0;
+}
+
+.mainpage-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Header */
+.mainpage-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: #4A6EDB; /* Colore in linea con il logo */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.current-date {
+    font-size: 1.2rem;
+    color: #6366f1;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+    .current-date:hover {
+        color: #4A6EDB; /* Cambia colore al hover */
+    }
+
+
+/* Basic styling for arrow icons */
+.icon-arrow {
+    font-size: 18px;
+    color: #556cd6;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+    .icon-arrow:hover {
+        color: #4457b6;
+        transform: scale(1.1);
+    }
+
+
+/* Calendar Controls */
+.calendar-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.calendar-title {
+    font-size: 1.5rem;
+    margin: 0 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.btn-navigation {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #4A6EDB;
+    transition: color 0.3s ease;
+}
+
+    .btn-navigation:hover {
+        color: #6366f1;
+    }
+
+/* Calendar Table */
+.calendar-container {
+    margin-bottom: 2rem;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+    .calendar-table th,
+    .calendar-table td {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .calendar-table th {
+        color: #6366f1;
+        font-weight: 600;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+.calendar-day {
+    position: relative;
+}
+
+.day-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .day-link:hover {
+        background-color: #f0f0f0;
+        transform: scale(1.05);
+    }
+
+.day-number {
+    font-weight: 600;
+    color: #4A6EDB;
+    font-size: 1.2rem;
+}
+
+.task-count {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Add Task Button */
+.btn-add-task {
+    background-color: #4A6EDB;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 2rem auto;
+}
+
+    .btn-add-task:hover {
+        background-color: #6366f1;
+    }
+
+/* Task Form */
+.task-form-container {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.task-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.task-input, .task-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+    .task-input:focus, .task-textarea:focus {
+        border-color: #6366f1;
+        outline: none;
+    }
+
+.task-button {
+    background-color: #4A6EDB;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .task-button:hover {
+        background-color: #6366f1;
+    }
+
+/* Tasks for Day */
+.tasks-for-day-container {
+    margin-top: 2rem;
+}
+
+.tasks-for-day {
+    font-size: 1.5rem;
+    color: #4A6EDB;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+    .task-item:hover {
+        transform: scale(1.02);
+    }
+
+.no-tasks-message {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #999;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .calendar-controls {
+        flex-direction: column;
+    }
+
+    .calendar-title {
+        margin: 1rem 0;
+    }
+
+    .task-form {
+        padding: 1rem;
+    }
+}

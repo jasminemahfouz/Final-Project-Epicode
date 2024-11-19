@@ -1,0 +1,18 @@
+﻿@model WomenActivity.Models.TaskItem
+
+@{
+    ViewData["Title"] = "Task Details";
+}
+
+<h2>Task Details</h2>
+
+<div>
+    <h4>@Model.Name</h4>
+    <p>@Model.Description</p>
+    <p><strong>Time:</strong> @Model.Time.ToString("g")</p>
+    <p><strong>Color:</strong> @Model.Color</p>
+    <p><strong>Type:</strong> @Model.Type</p>
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>
