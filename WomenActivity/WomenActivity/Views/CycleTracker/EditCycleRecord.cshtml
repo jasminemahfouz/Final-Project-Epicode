@@ -12,7 +12,7 @@
         <h2><i class="fas fa-edit"></i> Edit Cycle Record</h2>
     </header>
 
-    <form method="post" action="/api/CycleTracker/EditCycleRecord/@Model.Id" class="cycle-form">
+    <form method="post" asp-action="EditCycleRecord" asp-controller="CycleTracker" class="cycle-form">
         <input type="hidden" name="Id" value="@Model.Id" />
         <input type="hidden" name="UserId" value="@Model.UserId" />
 
