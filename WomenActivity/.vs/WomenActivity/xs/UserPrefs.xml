@@ -5,46 +5,62 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.WomenActivity PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WomenActivity/Controllers/UsersController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WomenActivity/Controllers/RoutineController.cs">
     <Files>
-      <File FileName="WomenActivity/Views/Shared/_Layout.cshtml" Line="47" Column="122" />
+      <File FileName="WomenActivity/Views/Shared/_Layout.cshtml" />
       <File FileName="WomenActivity/Controllers/HomeController.cs" Line="38" Column="1" />
-      <File FileName="WomenActivity/Views/Home/AboutMe.cshtml" Line="49" Column="58" />
-      <File FileName="WomenActivity/Views/UserProfile/Index.cshtml" Line="37" Column="5" />
-      <File FileName="WomenActivity/wwwroot/css/site.css" Line="190" Column="1" />
-      <File FileName="WomenActivity/wwwroot/css/custom-profile.css" Line="33" Column="13" />
-      <File FileName="WomenActivity/Views/Home/Privacy.cshtml" Line="1" Column="1" />
-      <File FileName="WomenActivity/Views/Home/Index.cshtml" Line="58" Column="1" />
-      <File FileName="WomenActivity/wwwroot/css/custom-routine.css" Line="162" Column="1" />
-      <File FileName="WomenActivity/Controllers/CycleTrackerController.cs" Line="32" Column="51" />
-      <File FileName="WomenActivity/Views/DailyWellness/Index.cshtml" Line="37" Column="9" />
+      <File FileName="WomenActivity/Views/Home/AboutMe.cshtml" />
+      <File FileName="WomenActivity/Views/UserProfile/Index.cshtml" />
+      <File FileName="WomenActivity/wwwroot/css/site.css" />
+      <File FileName="WomenActivity/wwwroot/css/custom-profile.css" />
+      <File FileName="WomenActivity/Views/Home/Privacy.cshtml" />
+      <File FileName="WomenActivity/Views/Home/Index.cshtml" />
+      <File FileName="WomenActivity/wwwroot/css/custom-routine.css" />
+      <File FileName="WomenActivity/Controllers/CycleTrackerController.cs" Line="98" Column="10" />
+      <File FileName="WomenActivity/Views/DailyWellness/Index.cshtml" />
       <File FileName="WomenActivity/Controllers/DailyWellnessController.cs" Line="12" Column="26" />
-      <File FileName="WomenActivity/wwwroot/css/custom-wellness.css" Line="118" Column="28" />
-      <File FileName="WomenActivity/Views/UserProfile/Goals.cshtml" Line="41" Column="1" />
-      <File FileName="WomenActivity/Views/UserProfile/Books.cshtml" Line="41" Column="7" />
-      <File FileName="WomenActivity/Views/UserProfile/Memories.cshtml" Line="41" Column="59" />
-      <File FileName="WomenActivity/wwwroot/css/custom-memories.css" Line="109" Column="1" />
-      <File FileName="WomenActivity/wwwroot/css/custom-goals.css" Line="110" Column="1" />
-      <File FileName="WomenActivity/wwwroot/css/custom-books.css" Line="102" Column="1" />
-      <File FileName="WomenActivity/Views/Routine/Index.cshtml" Line="66" Column="57" />
-      <File FileName="WomenActivity/Views/MainPage/Index.cshtml" Line="44" Column="31" />
-      <File FileName="WomenActivity/wwwroot/css/home.css" Line="51" Column="1" />
+      <File FileName="WomenActivity/wwwroot/css/custom-wellness.css" />
+      <File FileName="WomenActivity/Views/UserProfile/Goals.cshtml" />
+      <File FileName="WomenActivity/Views/UserProfile/Books.cshtml" />
+      <File FileName="WomenActivity/Views/UserProfile/Memories.cshtml" />
+      <File FileName="WomenActivity/wwwroot/css/custom-memories.css" />
+      <File FileName="WomenActivity/wwwroot/css/custom-goals.css" />
+      <File FileName="WomenActivity/wwwroot/css/custom-books.css" />
+      <File FileName="WomenActivity/Views/Routine/Index.cshtml" Line="20" Column="13" />
+      <File FileName="WomenActivity/Views/MainPage/Index.cshtml" />
+      <File FileName="WomenActivity/wwwroot/css/home.css" />
       <File FileName="WomenActivity/Controllers/UsersController.cs" Line="28" Column="10" />
-      <File FileName="WomenActivity/Controllers/UserProfileController.cs" Line="424" Column="26" />
-      <File FileName="WomenActivity/Controllers/TypeController.cs" Line="12" Column="32" />
-      <File FileName="WomenActivity/Controllers/TasksController.cs" Line="12" Column="17" />
+      <File FileName="WomenActivity/Controllers/UserProfileController.cs" />
+      <File FileName="WomenActivity/Controllers/TypeController.cs" />
+      <File FileName="WomenActivity/Controllers/TasksController.cs" />
       <File FileName="WomenActivity/Controllers/TaskItemsController.cs" Line="14" Column="32" />
-      <File FileName="WomenActivity/Controllers/RoutineController.cs" Line="15" Column="6" />
-      <File FileName="WomenActivity/Controllers/MainController.cs" Line="150" Column="1" />
-      <File FileName="WomenActivity/Program.cs" Line="41" Column="22" />
-      <File FileName="WomenActivity/Views/Tasks/Index.cshtml" Line="15" Column="42" />
-      <File FileName="WomenActivity/wwwroot/css/profle-sections.css" Line="1" Column="1" />
+      <File FileName="WomenActivity/Controllers/RoutineController.cs" Line="213" Column="1" />
+      <File FileName="WomenActivity/Controllers/MainController.cs" />
+      <File FileName="WomenActivity/Program.cs" Line="66" Column="1" />
+      <File FileName="WomenActivity/Views/Tasks/Index.cshtml" />
+      <File FileName="WomenActivity/wwwroot/css/profle-sections.css" />
+      <File FileName="WomenActivity/appsettings.json" Line="13" Column="2" />
+      <File FileName="WomenActivity/Views/Routine/AddRoutine.cshtml" Line="54" Column="1" />
+      <File FileName="WomenActivity/Views/Routine/DeleteRoutine.cshtml" Line="16" Column="1" />
+      <File FileName="WomenActivity/Views/Routine/EditRoutine.cshtml" Line="7" Column="2" />
+      <File FileName="WomenActivity/Views/CycleTracker/AddCycleRecord.cshtml" Line="35" Column="15" />
+      <File FileName="WomenActivity/Models/Routine.cs" Line="33" Column="30" />
+      <File FileName="WomenActivity/Views/CycleTracker/Index.cshtml" Line="38" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WomenActivity" expanded="True">
-            <Node name="WomenActivity" expanded="True" />
+            <Node name="WomenActivity" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="RoutineController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Routine" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>

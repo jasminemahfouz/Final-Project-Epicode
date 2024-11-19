@@ -5,67 +5,57 @@
     ViewData["Title"] = "Modifica Routine";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<form asp-action="EditRoutine" method="post" class="routine-form">
+    @Html.AntiForgeryToken()
 
-<link rel="stylesheet" href="~/css/custom-editroutine.css" />
+    <input type="hidden" asp-for="Id" /> <!-- Campo nascosto per l'ID della routine -->
 
-<div class="routine-container">
-    <header class="routine-header">
-        <h2><i class="fas fa-edit"></i> Modifica Routine</h2>
-    </header>
+    <div class="form-group">
+        <label asp-for="Name" class="form-label"><i class="fas fa-tasks"></i> Nome</label>
+        <input asp-for="Name" class="form-control routine-input" required />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
 
-    <form asp-action="EditRoutine" method="post" class="routine-form">
-        <div class="form-group">
-            <label asp-for="Name" class="form-label"><i class="fas fa-tasks"></i> Nome</label>
-            <input asp-for="Name" class="form-control routine-input" />
-            <span asp-validation-for="Name" class="text-danger"></span>
-        </div>
+    <div class="form-group">
+        <label asp-for="Date" class="form-label"><i class="fas fa-calendar-day"></i> Data</label>
+        <input asp-for="Date" type="date" class="form-control routine-input" required />
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
 
-        <div class="form-group">
-            <label asp-for="Date" class="form-label"><i class="fas fa-calendar-day"></i> Data</label>
-            <input asp-for="Date" type="date" class="form-control routine-input" />
-            <span asp-validation-for="Date" class="text-danger"></span>
-        </div>
+    <div class="form-group">
+        <label asp-for="Time" class="form-label"><i class="fas fa-clock"></i> Orario</label>
+        <input asp-for="Time" type="time" class="form-control routine-input" required />
+        <span asp-validation-for="Time" class="text-danger"></span>
+    </div>
 
-        <div class="form-group">
-            <label asp-for="Time" class="form-label"><i class="fas fa-clock"></i> Orario</label>
-            <input asp-for="Time" type="time" class="form-control routine-input" />
-            <span asp-validation-for="Time" class="text-danger"></span>
-        </div>
+    <div class="form-group">
+        <label asp-for="Frequency" class="form-label"><i class="fas fa-sync-alt"></i> Frequenza</label>
+        <select asp-for="Frequency" class="form-control routine-input">
+            <option value="Daily">Quotidiano</option>
+            <option value="Weekly">Settimanale</option>
+            <option value="Monthly">Mensile</option>
+        </select>
+        <span asp-validation-for="Frequency" class="text-danger"></span>
+    </div>
 
-        <div class="form-group">
-            <label asp-for="Frequency" class="form-label"><i class="fas fa-sync-alt"></i> Frequenza</label>
-            <select asp-for="Frequency" class="form-control routine-input">
-                <option value="Daily">Quotidiano</option>
-                <option value="Weekly">Settimanale</option>
-                <option value="Monthly">Mensile</option>
-            </select>
-            <span asp-validation-for="Frequency" class="text-danger"></span>
-        </div>
+    <div class="form-group">
+        <label asp-for="RoutineType" class="form-label"><i class="fas fa-tag"></i> Tipo</label>
+        <select asp-for="RoutineType" class="form-control routine-input">
+            <option value="Shower">Doccia</option>
+            <option value="Exercise">Esercizio</option>
+            <option value="School">Scuola</option>
+            <option value="Study">Studio</option>
+            <option value="Work">Lavoro</option>
+            <option value="Other">Altro</option>
+        </select>
+        <span asp-validation-for="RoutineType" class="text-danger"></span>
+    </div>
 
-        <div class="form-group">
-            <label asp-for="RoutineType" class="form-label"><i class="fas fa-tag"></i> Tipo</label>
-            <select asp-for="RoutineType" class="form-control routine-input">
-                <option value="Shower">Doccia</option>
-                <option value="Exercise">Esercizio</option>
-                <option value="School">Scuola</option>
-                <option value="Study">Studio</option>
-                <option value="Work">Lavoro</option>
-                <option value="Other">Altro</option>
-            </select>
-            <span asp-validation-for="RoutineType" class="text-danger"></span>
-        </div>
-
-        <div class="button-group">
-            <button type="submit" class="btn btn-primary routine-button"><i class="fas fa-save"></i> Salva</button>
-            <a asp-action="Index" class="btn btn-secondary routine-button"><i class="fas fa-times-circle"></i> Annulla</a>
-        </div>
-    </form>
-</div>
-
-@section Scripts {
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <partial name="_ValidationScriptsPartial" />
-}
+    <div class="button-group">
+        <button type="submit" class="btn btn-primary routine-button"><i class="fas fa-save"></i> Salva</button>
+        <a asp-action="Index" class="btn btn-secondary routine-button"><i class="fas fa-times-circle"></i> Annulla</a>
+    </div>
+</form>
 
 
 <style>
@@ -156,6 +146,4 @@
             .routine-button.btn-secondary:hover {
                 background-color: #d3d6da;
             }
-
-
 </style>
